@@ -1,25 +1,63 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Flick Privacy Policy</title>
-  </head>
-  <body>
-    <h1>Flick Privacy Policy</h1>
-    <p>Last updated: July 13, 2026</p>
-
-    <p>Flick is a book ranking and reading library app.</p>
-
-    <h2>Data Stored On Your Device</h2>
-    <p>Flick stores your reading library, reading status, rankings, profile details, notes, reviews, and profile photo locally on your device.</p>
-
-    <h2>Data Sent Off Device</h2>
-    <p>When you search for books, Flick may send book search terms, titles, authors, ISBNs, or public book identifiers to its book metadata backend to fetch public book information and covers.</p>
-
-    <h2>Accounts and Tracking</h2>
-    <p>Flick does not currently use accounts, advertising, tracking, or cloud sync for your reading profile.</p>
-
-    <h2>Contact</h2>
-    <p>For privacy questions, contact: nazlizonoozi@gmail.com</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Flick handles your information.">
+  <title>Privacy Policy · Flick</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header><div class="wrap">
+    <a class="brand" href="./" aria-label="Flick privacy and support">flick</a>
+    <nav aria-label="Privacy and support">
+      <a href="./" aria-current="page">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: <time datetime="2026-10-21">21 October 2026</time></p>
+<p>Flick is an iPhone app for keeping a reading library and ranking books. This policy explains how the app, its book-information service and this website handle information. For privacy questions, contact Flick’s developer at <a href="mailto:nazlizonoozi@gmail.com">nazlizonoozi@gmail.com</a>.</p>
+<div class="summary">
+<p><strong>Your reading profile is stored locally.</strong> Flick does not currently provide Flick accounts, advertising, cross-app tracking or cloud sync of your reading profile.</p>
+<p>Book lookups use online services. Optional Goodreads sync, emails you send, and backups you export involve the services or destinations you choose.</p>
+</div>
+<h2>1. Information stored in Flick</h2>
+<p>Flick stores your books, shelves, reading status, rankings and comparison answers, reading dates, notes, reviews, labels, genre preferences, reading goals and profile details on your device. A photo you choose for your profile is also stored locally. Personal reading predictions and their calibration history are processed and saved on-device.</p>
+<p>Flick keeps local recovery copies to help protect saved data. Depending on your Apple settings, app data may also be included in an iCloud or computer backup managed by Apple. This is separate from Flick account sync.</p>
+<h2>2. Online book lookups and covers</h2>
+<p>When you search, scan an ISBN, match an imported book, browse a catalogue or load book details, Flick can send search text, book titles, authors, ISBNs and public catalogue identifiers to its book-information service hosted on Supabase. Lookups can also happen automatically to prepare descriptions and covers for saved or imported books.</p>
+<p>The service uses public catalogue sources including Google Books, Open Library and Wikidata. The app can also contact metadata or cover-image providers directly. Those services receive the information needed for the request and ordinary network information, such as your IP address when your device connects directly. Public book-series details can also be processed by an optional OpenAI metadata-classification service if it is configured; that feature does not receive your private reading profile.</p>
+<p>Flick does not attach your private notes, reviews, rankings, profile photo, bio or full reading profile to these metadata requests. Individual book lookups can nevertheless reveal reading interests. Avoid entering private information into book-search fields.</p>
+<p>The service stores public book metadata, covers and series information so that lookups work reliably. Hosting and catalogue providers may process request details, including lookup terms and technical logs, for operating and securing their services.</p>
+<h2>3. Goodreads and imports</h2>
+<p>Goodreads sync is optional. If you connect a public Goodreads profile, Flick stores its public identifier and sync information locally, and requests that profile’s RSS feeds directly from Goodreads. Goodreads receives the profile identifier, requested feed information and normal network information. Flick does not ask for your Goodreads password or sign into Goodreads for you.</p>
+<p>Flick reads the book titles, authors, identifiers, shelves, ratings and dates provided by those feeds and uses them to import or update books locally. The connection can check for changes while Flick is open and when iOS allows background work. It does not send your Flick rankings or edits back to Goodreads.</p>
+<p>A Goodreads CSV file you select is read on-device. Import from Notes reads only text you explicitly paste; it does not access your Notes library. To match books, extracted titles, authors and ISBNs can be sent through the online lookup services described above. Pasted text is interpreted as book information, so paste a book list rather than private notes. The full CSV file is not uploaded as a reading profile.</p>
+<h2>4. On-device AI reminders</h2>
+<p>Where supported and available, Flick uses Apple’s on-device models to create short book reminders and overviews from public titles, authors, descriptions and genre labels. That reminder feature does not send prompts or generated reminders to a cloud AI service, and it does not give the model your private notes, rankings or Goodreads profile.</p>
+<p>Generated reminders may be saved in a disposable local cache. When the model is unavailable, Flick can show catalogue text instead. Fetching the catalogue description can still require an online book lookup.</p>
+<h2>5. Camera and profile photos</h2>
+<p>Camera access is optional and is used to scan book ISBN barcodes. Flick does not save or upload camera frames for this feature. A validated ISBN can be sent for an online book lookup. Typed search remains available without camera access.</p>
+<p>The native photo picker gives Flick the profile image you select. Flick stores that image locally and does not upload it as part of your profile. You can manage camera permission in iOS Settings.</p>
+<h2>6. Exports, backups and deletion</h2>
+<p>Export my Flick data saves a file to a location you choose using Apple’s Files interface. It can contain your reading library, private notes and reviews, profile details, prediction history and Goodreads connection information. New exports exclude your profile photo. Keep exports private: choosing iCloud Drive or another storage provider places the file with that provider.</p>
+<p>Import my Flick data reads a backup you select and asks before replacing saved data. Recovery copies may contain earlier data until replaced. Flick does not upload exports or restored reading profiles to a Flick account.</p>
+<p>You can edit or remove saved items in Flick and disconnect Goodreads in Settings. Disconnecting stops future feed checks; it does not delete books already imported or change anything in Goodreads. To remove Flick’s local app data, use iOS’s <strong>Delete App</strong> option, rather than Offload App. Separately manage exported files and any Apple or other provider backups. Without a backup, Flick cannot recover a deleted local library.</p>
+<h2>7. Support and diagnostics</h2>
+<p>If you email us, we receive your email address, message and anything you choose to attach. Book-report tools prepare a message and may attach book or import diagnostic details for you to review and send. Flick does not email reports automatically. Do not send your full backup or private reading notes unless you intentionally want to share them.</p>
+<p>We use support correspondence to respond to requests and investigate problems. Apple may make crash and beta-testing reports available according to your device and TestFlight settings. Flick does not include an advertising SDK or a separate third-party analytics SDK. Infrastructure providers may retain technical records for reliability, security and abuse prevention.</p>
+<h2>8. Retention, providers and your choices</h2>
+<p>Local reading data stays with the app until it is changed, replaced or removed; recovery copies and backups can retain earlier versions. Public catalogue records can be kept for reuse. Support messages are kept as needed to handle the request and follow-up, maintain necessary records and meet legal obligations. Technical records and provider backups follow the relevant provider’s retention arrangements; cache freshness is not a promise of deletion after a fixed number of days.</p>
+<p>We use information to provide the features you request, answer support questions, and keep Flick reliable and secure. We do not sell your personal information or use it for targeted advertising. Services involved in lookups, hosting, email or storage may process information outside your country under their own applicable terms and safeguards.</p>
+<p>Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing of personal information, and to complain to your data-protection authority. Contact us about information we hold. We cannot remotely access your device-only library, so managing that data normally happens on your iPhone or in your backups.</p>
+<p>For information about provider handling, see <a href="https://supabase.com/privacy">Supabase</a>, <a href="https://policies.google.com/privacy">Google</a>, <a href="https://archive.org/about/terms.php">Internet Archive / Open Library</a>, <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia / Wikidata</a>, <a href="https://www.goodreads.com/about/privacy">Goodreads</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>.</p>
+<h2>9. This website and policy changes</h2>
+<p>These pages are hosted on GitHub Pages. They do not add analytics scripts, advertising, forms or cookies. GitHub may process visitor IP addresses and technical request information to deliver and secure the website.</p>
+<p>We will update this policy when Flick’s behaviour changes and show the revised date above. Visit the <a href="support.html">Support page</a> for help, or email <a href="mailto:nazlizonoozi@gmail.com">nazlizonoozi@gmail.com</a> with a privacy question.</p>
+</main>
+  <footer><div class="wrap">Flick · <a href="mailto:nazlizonoozi@gmail.com">nazlizonoozi@gmail.com</a></div></footer>
+</body>
 </html>
